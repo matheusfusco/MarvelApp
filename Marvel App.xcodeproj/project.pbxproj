@@ -23,6 +23,9 @@
 		F927E2AC1E08145800E8318B /* CharacterListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927E2AB1E08145800E8318B /* CharacterListModel.swift */; };
 		F927E2AE1E08146600E8318B /* CharacterListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927E2AD1E08146600E8318B /* CharacterListService.swift */; };
 		F98E94F21E0BED10005B4996 /* ImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98E94F11E0BED10005B4996 /* ImageType.swift */; };
+		F98E94FD1E0C04A4005B4996 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98E94FC1E0C04A4005B4996 /* MenuController.swift */; };
+		F98E95011E0C43D9005B4996 /* marvel_wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F98E95001E0C43D9005B4996 /* marvel_wallpaper.jpg */; };
+		F98E95031E0C4559005B4996 /* marvel_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F98E95021E0C4559005B4996 /* marvel_logo.jpg */; };
 		F9DD87521E082B250006BC78 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DD87511E082B250006BC78 /* CharacterDetailViewController.swift */; };
 		F9DD87541E082B380006BC78 /* CharacterDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DD87531E082B380006BC78 /* CharacterDetailModel.swift */; };
 		F9DD87561E082B460006BC78 /* CharacterDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DD87551E082B450006BC78 /* CharacterDetailService.swift */; };
@@ -78,6 +81,9 @@
 		F927E2AB1E08145800E8318B /* CharacterListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListModel.swift; sourceTree = "<group>"; };
 		F927E2AD1E08146600E8318B /* CharacterListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListService.swift; sourceTree = "<group>"; };
 		F98E94F11E0BED10005B4996 /* ImageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageType.swift; sourceTree = "<group>"; };
+		F98E94FC1E0C04A4005B4996 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		F98E95001E0C43D9005B4996 /* marvel_wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marvel_wallpaper.jpg; sourceTree = "<group>"; };
+		F98E95021E0C4559005B4996 /* marvel_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marvel_logo.jpg; sourceTree = "<group>"; };
 		F9DD87511E082B250006BC78 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		F9DD87531E082B380006BC78 /* CharacterDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailModel.swift; sourceTree = "<group>"; };
 		F9DD87551E082B450006BC78 /* CharacterDetailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailService.swift; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				F927E2731E080E9400E8318B /* AppDelegate.swift */,
+				F98E94FE1E0C0501005B4996 /* Menu */,
 				F9DD87681E09ADE30006BC78 /* General */,
 				F9DD875E1E085E2D0006BC78 /* Character List */,
 				F9DD875F1E085E370006BC78 /* Character Detail */,
@@ -161,6 +168,7 @@
 				F927E27F1E080E9400E8318B /* LaunchScreen.storyboard */,
 				F927E2821E080E9400E8318B /* Info.plist */,
 				F927E27A1E080E9400E8318B /* Marvel_App.xcdatamodeld */,
+				F98E94FF1E0C43CD005B4996 /* Resources */,
 			);
 			path = "Marvel App";
 			sourceTree = "<group>";
@@ -190,6 +198,23 @@
 				F927E2A71E080FF700E8318B /* Character.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		F98E94FE1E0C0501005B4996 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F98E94FC1E0C04A4005B4996 /* MenuController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		F98E94FF1E0C43CD005B4996 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F98E95001E0C43D9005B4996 /* marvel_wallpaper.jpg */,
+				F98E95021E0C4559005B4996 /* marvel_logo.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		F9DD875E1E085E2D0006BC78 /* Character List */ = {
@@ -357,6 +382,8 @@
 				F927E2811E080E9400E8318B /* LaunchScreen.storyboard in Resources */,
 				F927E27E1E080E9400E8318B /* Assets.xcassets in Resources */,
 				F927E2791E080E9400E8318B /* Main.storyboard in Resources */,
+				F98E95011E0C43D9005B4996 /* marvel_wallpaper.jpg in Resources */,
+				F98E95031E0C4559005B4996 /* marvel_logo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +539,7 @@
 				F927E2AA1E08136F00E8318B /* CharacterListViewController.swift in Sources */,
 				F9DD87671E09A83F0006BC78 /* JSONConverter.swift in Sources */,
 				F98E94F21E0BED10005B4996 /* ImageType.swift in Sources */,
+				F98E94FD1E0C04A4005B4996 /* MenuController.swift in Sources */,
 				F9DD87651E09A3610006BC78 /* Config.swift in Sources */,
 				F927E2AE1E08146600E8318B /* CharacterListService.swift in Sources */,
 				F927E2AC1E08145800E8318B /* CharacterListModel.swift in Sources */,

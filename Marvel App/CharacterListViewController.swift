@@ -9,10 +9,12 @@
 import Foundation
 import UIKit
 import SDWebImage
+import SWRevealViewController
 
 class CharacterListViewController: UIViewController {
     
     @IBOutlet weak var characterTableView: UITableView!
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     
     fileprivate lazy var model : CharacterListModel = {
         return CharacterListModel(delegate : self)
@@ -20,6 +22,19 @@ class CharacterListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad();
+        
+        if self.revealViewController() != nil {
+           menuButton.target = self.revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
+        let image = UIImage(named : "marvel_logo.jpg")
+        let imageView = UIImageView (frame: CGRect (x: 0, y: 0, width: 100, height: 44))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        self.navigationItem.titleView = imageView
+        //self.navigationController?.navigationItem.titleView = UIImageView (image: image)
         
         print("timeStamp: \(Config.timeStamp) hash: \(Config.hashAPI)")
         model.characterListRequest()

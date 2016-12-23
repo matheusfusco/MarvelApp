@@ -11,6 +11,7 @@ target 'Marvel App' do
   pod 'RealmSwift', :git => 'https://github.com/realm/realm-cocoa.git', :submodules => true
   pod 'Realm', :git => 'https://github.com/realm/realm-cocoa.git', :submodules => true
   pod 'SDWebImage'
+  pod 'SWRevealViewController'
 
   target 'Marvel AppTests' do
     inherit! :search_paths
